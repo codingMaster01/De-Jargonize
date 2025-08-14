@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "stylesheet" href = "index.css">
 </head>
 <body>
+    <nav>
+        <!--Logo-->
+        <img src = "De-Jargonizer (1).png">
+    </nav>
+
+    <!--Description-->
+    <p>DeJargonizer is a simple tool that takes complex, jargon-heavy text and rewrites it in plain, easy-to-understand language. It scans your text for uncommon or technical words and replaces them with simpler, more common synoynms, helping anyone understand any text!</p>
     
+    <!--Content-->
+    <section class = "grid">
+        <!--User Entered Complex Text-->
+        <section class = "cardEnter">
+            <h3>Original Text</h3>
+            <textarea id = "inputText" placeholder = "Paste your jargon-heavy text here..."></textarea>
+        </section>
+
+        <!--Button To Click-->
+        <div class="button-container">
+            <button id="simplifyButton">Simplify Text</button>
+        </div>
+
+        <!--Produced Simplified Text-->
+        <section class = "cardOutput">
+            <h3>Simplified Text</h3>
+            <textarea id = "outputText" placeholder = "Simplified text appears here..."></textarea>
+        </section>
+    </section>
+
+    <!--Functionality-->
+    <script src = "index.js"></script>
 </body>
 </html>
